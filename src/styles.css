@@ -1,1 +1,157 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+  font-family: 'Orbitron', sans-serif !important;
+}
+
+nav .nim-title {
+  margin: 0;
+  padding: 10px 0;
+  text-align: center;
+  font-weight: 700;
+  font-size: 40px;
+}
+
+#new-game {
+  float: right;
+  /*display: inline-block;*/
+  border: 1px solid #ddd;
+  background-color: transparent;
+  font-size: 20px;
+  position: relative;
+  vertical-align: middle;
+  margin-top: 12px;
+}
+
+.app-wrapper {
+  padding-top: 90px;
+}
+
+nim-piece {
+    /*z-index: 106;*/
+    /*position: absolute;*/
+    /*outline: 0;*/
+    /*cursor: pointer;*/
+    /*top: 100%;*/
+    height: 100px !important;
+    width: 100px !important;
+    
+    border-radius: 100px 100px;
+    /*transition: all .1s ease-in;*/
+    /*border: none;*/
+    
+    /*padding: 50px;
+    margin: 50px;*/
+    margin: 10px;
+    background-color: #FCFBE5;
+    box-shadow: 0 5px 50px #fff2ba;
+}
+
+.piece-off {
+  background-color: #000;
+  box-shadow: 0 5px 50px #000;
+}
+
+nim-switch {
+  height: 100px;
+  width: 100px !important;
+  background-color: #de0f0f;
+  border-radius: 30px 30px;
+  box-shadow: 0 5px 50px #de0f0f;
+  margin: 10px;
+}
+
+.switch-off {
+  background-color: #440000;
+  box-shadow: 0 5px 50px #440000;
+}
+
+body {
+  background-color:#1f1f1f !important;
+}
+
+.row-centered {
+    text-align:center;
+}
+.col-centered {
+    display:inline-block;
+    float:none !important;
+    /* reset the text-align */
+    /*text-align:left;*/
+    /* inline-block space fix */
+    /*margin-right:-4px;*/
+}
+
+.vcenter {
+    /*display: inline-block;*/
+    vertical-align: middle;
+    /*float: none !important;*/
+}
+
+nim-player {
+  color: #1d4982;
+  font-size: 30px;
+}
+
+.player {
+  font-size: 40px;
+  /*border: 2px solid #1d4982;
+  border-radius: 20px 20px;
+  box-shadow: 0px 1px 20px #1d4982, inset 0px 1px 20px #1d4982;
+  padding: 6px;*/
+  margin: 0 5px;
+}
+
+.active-player {
+  color: #0070ff;
+  font-size: 50px;
+}
+
+.end-turn-btn {
+  font-size: 20px;
+  border: 2px solid #11af11;
+  border-radius: 20px 20px;
+  box-shadow: 0px 1px 20px #11af11, inset 0px 1px 20px #11af11;
+  padding: 15px;
+  color: #11af11;
+  background: none;
+}
+
+.end-turn-btn:hover {
+  box-shadow: 0px 1px 30px #11af11, inset 0px 1px 30px #11af11;
+}
+
+.end-turn-btn:focus {
+  outline:none;
+}
+
+.end-turn-btn:active {
+  box-shadow: 0px 1px 30px #1bf51b, inset 0px 1px 30px #1bf51b;
+  border: 2px solid #1bf51b;
+  color: #1bf51b;
+}
+
+nim-result {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  justify-content: center;
+  align-items: center;
+  z-index: 105;
+}
+
+.result {
+  text-align: center;
+  border: 2px solid white;
+  background-color: white;
+  max-width: 400px;
+  max-height: 360px;
+  width: 80%;
+  border-radius: 10px;
+  margin: 20px;
+  box-shadow: 0 0 20px rgba(black, .8);
+  position: relative;
+  padding: 5px;
+}
