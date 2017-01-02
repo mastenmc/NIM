@@ -1,0 +1,13 @@
+<div class="col-xs-2">
+    <div class="row">
+        <nim-switch (click)="turnOff([row])" class="col-xs-1 vcenter"
+            [class.switch-off]="isSwitchDisabled()"></nim-switch>
+    </div>
+</div>
+<div class="col-xs-10">
+    <div class="row row-centered">
+        <nim-piece *ngFor="let piece of row.pieces" 
+            [piece]="piece" class="col-xs-1 col-centered" 
+            [class.piece-off]="piece.isOff"></nim-piece>
+    </div>
+</div>

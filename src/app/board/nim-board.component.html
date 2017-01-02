@@ -1,0 +1,13 @@
+<div class="board">
+    <div class="row">
+        <div class="col-xs-6">
+            <!--<span class="player">{{nim.currentPlayer}}'s turn.</span>-->
+            <nim-player [player]="nim.currentPlayer"></nim-player>
+        </div>
+        <div class="col-xs-6 text-right">
+            <button class="end-turn-btn" (click)="nim.endTurn()">End Turn</button>
+        </div>
+    </div>
+    <nim-row *ngFor="let row of nim.board.rows" [row]="row" class="row"></nim-row>
+</div>
+<nim-result *ngIf="nim.isOver" class=""></nim-result>
